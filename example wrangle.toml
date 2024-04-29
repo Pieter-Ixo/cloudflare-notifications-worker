@@ -1,0 +1,10 @@
+name="cloudflare-notifications-worker"
+main="src/index.ts"
+compatibility_date = "2022-11-22"
+node_compat = true
+
+account_id="<cloudflare account id>"
+workers_dev = true
+
+[vars]
+AUTHORIZATION="<bearer token>"

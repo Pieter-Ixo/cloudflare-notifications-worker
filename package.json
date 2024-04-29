@@ -1,0 +1,26 @@
+{
+	"name": "cloudflare-notifications-worker",
+	"private": false,
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"author": "Pieter-Ixo",
+	"license": "MIT",
+	"scripts": {
+		"test": "jest --verbose",
+		"dev": "wrangler dev src/index.ts",
+		"deploy": "wrangler publish src/index.ts"
+	},
+	"dependencies": {
+		"expo-server-sdk": "3.9.0",
+		"hono": "^2.5.7"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20221111.1",
+		"@types/jest": "^29.2.3",
+		"esbuild": "^0.15.15",
+		"esbuild-jest": "^0.5.0",
+		"jest": "^29.3.1",
+		"jest-environment-miniflare": "^2.11.0",
+		"wrangler": "^2.4.4"
+	}
+}
